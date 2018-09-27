@@ -122,7 +122,7 @@ def LGTVScan(first_only=False):
                     'address': address[0]
                 }
         except Exception as e:
-            print e.message
+            print(e.message)
             attempts -= 1
             continue
 
@@ -142,7 +142,7 @@ def LGTVScan(first_only=False):
     if len(addresses) == 0:
         return []
 
-    return list(set(addresses))
+    return list(addresses)
 
 
 def resolveHost(hostname):
